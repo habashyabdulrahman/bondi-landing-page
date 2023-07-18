@@ -5,14 +5,14 @@ A website for Bondi Theme agency created with HTML and CSS!
 🌱 I turned a PSD web template into a usable and responsive website as a practice on front-end technologies!
 
 ## Design Preview
-![design-view](./imgs/design-view.png)
+![design-view](../Bondi/imgs/design-view.png)
 
 ## Live Demo
 👁 [Click here](https://mohammadjarabah.github.io/bondi-theme-agency-website) to check out the live demo!
 
 ## Technologies Used
-* <img src='./imgs/readme-badges/html.svg' alt='HTML' valign='middle'>
-* <img src='./imgs/readme-badges/css.svg' alt='CSS' valign='middle'> (CSS code was written following to BEM methodology)
+* <img src='../imgs/readme-badges/html.svg' alt='HTML' valign='middle'>
+* <img src='../imgs/readme-badges/css.svg' alt='CSS' valign='middle'> (CSS code was written following to BEM methodology)
 
 ## Features
 * ⭐ Single page design
