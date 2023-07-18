@@ -1,0 +1,364 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+  --blue: #0d6efd;
+  --section-coler: #eff7fa;
+  --main-color: #0ef;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s;
+}
+.main-btn:hover {
+  transform: scale(1.06);
+  color: #fff;
+  border: none;
+}
+
+.main-titel::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+li {
+  list-style: none !important ;
+}
+
+/* Start Navbar */
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar a:hover {
+
+  border-bottom: none;
+}
+
+.navbar .search {
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+
+.search {
+  border-left: 1px solid var(--green-color);
+}
+
+.search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+  min-height: calc(100vh - 72px);
+  position: relative;
+
+  /* Background */
+  background-image: url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.landing::before {
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 100%;
+    opacity: 0.70;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.landing h1 {
+  font-weight: 300;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+.landing p {
+  font-size: 15px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+/* End Landing */
+
+/* Start featurers */
+.featurers .icon-holder {
+  height: 200px;
+}
+
+.featurers .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.featurers .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-coler);
+}
+
+.featurers .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.featurers .feat h4 {
+  color: var(--yellow-color);
+}
+/* End featurers */
+
+/* Start Our Work Services */
+.our-work {
+  background-color: var(--section-coler);
+}
+
+.our-work ul .active {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+  color: var(--blue);
+}
+
+.our-work .box {
+  overflow: hidden;
+  position: relative;
+}
+
+.our-work .box::before {
+  content: attr(deta-work);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+/* ENd Our Work Services */
+
+/* Stuff Start */
+.stuff .desc {
+  max-width: 450px;
+}
+/* Stuff  End*/
+
+/* Our Team Start */
+.our-team {
+  background-color: var(--section-coler);
+}
+
+.our-team h2 {
+  color: var(--yellow-color);
+}
+
+.our-team .box {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all .3s ease;
+}
+
+.our-team .box:hover {
+  transform: scale(.90);
+}
+
+.our-team .box img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.our-team .box h4 {
+  background-color: var(--green-color);
+}
+/* Our Team ENd */
+
+/* Project Start */
+.project {
+  background-color: var(--dark-color);
+}
+/* Project end */
+
+/* Subscribe Start */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+
+.subscribe ::placeholder {
+  color: #fff;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+}
+/* Subscribe End */
+
+/* Footer Start */
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .row {
+  grid-template-columns: 3rem;
+}
+
+.footer .row .info p,
+.contact p {
+  font-size: 12px;
+}
+
+.footer .row ul li a {
+  color: #a8b9c0;
+}
+
+.footer .row ul li a:hover {
+  border-bottom: none;
+  color: #909ea3;
+}
+
+.footer .contact a {
+  transition: .5s ease;
+}
+.footer .contact a:hover {
+  background-color: #0355cf;
+  transform: none;
+}
+
+.footer .social ul svg {
+  width: 30px;
+  height: 30px;
+  transition: all .3s ease;
+}
+
+.footer .social ul svg:hover {
+  background-color: #696969;
+}
+
+.footer .contact ul li a:hover {
+  background-color: none;
+  transform: none;
+}
+
+.footer .facebook {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.footer .discord {
+  background-color: #eb459e;
+  color: #fff;
+}
+
+.footer .github {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer .linkedin {
+  background-color: #0a66c2;
+  color: #fff;
+}
+
+.icon1 {
+  height: 4rem;
+  background-color: var(--dark-color);
+}
+.icon1 .footer-iconTop {
+  margin: 0 3rem 3rem 0;
+  position: sticky;
+  background-color: var(--dark-color);
+}
+
+.icon1 .footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--blue);
+    border-radius: .8rem;
+    transition: .5s ease;
+    z-index: 100;
+}
+
+.icon1 .footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--green-color);
+}
+
+.icon1 .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--dark-color);
+}
+/* Footer End */
